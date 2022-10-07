@@ -1234,6 +1234,11 @@
   dependencies:
     "prop-types" "^15.8.1"
 
+"@heroicons/react@^2.0.12":
+  "integrity" "sha512-FZxKh3i9aKIDxyALTgIpSF2t6V6/eZfF5mRu41QlwkX3Oxzecdm1u6dpft6PQGxIBwO7TKYWaMAYYL8mp/EaOg=="
+  "resolved" "https://registry.npmjs.org/@heroicons/react/-/react-2.0.12.tgz"
+  "version" "2.0.12"
+
 "@humanwhocodes/config-array@^0.10.5":
   "integrity" "sha512-XVVDtp+dVvRxMoxSiSfasYaG02VEe1qH5cKgMQJWhol6HwzbcqoCMJi8dAGoYAO57jhUyhI6cWuRiTcRaDaYug=="
   "resolved" "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.10.5.tgz"

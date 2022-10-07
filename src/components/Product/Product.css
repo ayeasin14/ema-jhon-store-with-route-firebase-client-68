@@ -45,9 +45,18 @@
     bottom: 0;
     font-size: large;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn-cart:hover {
     background-color: orange;
     color: bisque;
+}
+
+.shopping-cart {
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
 }
