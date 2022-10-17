@@ -11,4 +11,12 @@
     color: aliceblue;
     text-decoration: none;
     margin-right: 20px;
+    padding: 0 10px;
+}
+
+.header-container a:hover {
+    background-color: antiquewhite;
+    color: #1C2B35;
+    padding: 10px;
+    border-radius: 10px;
 }

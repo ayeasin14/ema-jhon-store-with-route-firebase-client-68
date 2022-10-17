@@ -19,7 +19,7 @@ const Login = () => {
             </form>
             <p className='create-account'>New to Ema-john? <Link to='/signup'>Create New Account</Link> </p>
             <hr />
-            <input className='btn-submit' type="submit" value="Login with Google" />
+            <input className='btn-submit' type="submit" value="Continue with Google" />
         </div>
     );
 };

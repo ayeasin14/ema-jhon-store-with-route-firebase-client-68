@@ -23,7 +23,7 @@ const SignUp = () => {
             </form>
             <p className='create-account'>Already have an account? <Link to='/login'>Login</Link> </p>
             <hr />
-            <input className='btn-submit' type="submit" value="Sign up with Google" />
+            <input className='btn-submit' type="submit" value="Continue with Google" />
         </div>
     );
 };
