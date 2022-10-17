@@ -57,6 +57,7 @@ const Shop = () => {
                         handleAddToCart={handleAddToCart}
                     ></Product>)
                 }
+
             </div>
             <div className="cart-container">
                 <Cart
