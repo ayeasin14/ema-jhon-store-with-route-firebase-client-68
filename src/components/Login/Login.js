@@ -47,6 +47,9 @@ const Login = () => {
                     <input type="password" name="password" id="" placeholder='your password' required />
                 </div>
                 <input className='btn-submit' type="submit" value="Login" />
+                <div>
+                    {error}
+                </div>
             </form>
             <p className='create-account'>New to Ema-john? <Link to='/signup'>Create New Account</Link> </p>
             <hr />
