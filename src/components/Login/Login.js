@@ -1,12 +1,43 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../context/UserContext';
 import './Login.css';
 
 const Login = () => {
+    const [error, setError] = useState(null);
+
+    const { loginUser } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || '/'
+
+
+    const handleLogin = (event) => {
+        event.preventDefault();
+
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+
+        if (password.length < 6) {
+            setError('Your password should be 6 charecter or more')
+        }
+
+        loginUser(email, password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                form.reset();
+                navigate(from, { replace: true });
+            })
+            .catch(error => console.error(error))
+
+    }
+
     return (
         <div className='form-container'>
             <h1 className='form-title'>Login</h1>
-            <form>
+            <form onSubmit={handleLogin}>
                 <div className='form-control'>
                     <label htmlFor="email">Email</label>
                     <input type="email" name="email" id="" placeholder='your email' required />
